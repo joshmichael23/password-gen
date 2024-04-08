@@ -3,10 +3,10 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './styles.scss'
 function App() {
-  const [count, setCount] = useState(10);
-  const [upper, setUpper] = useState(true);
-  const [lower, setLower] = useState(true);
-  const [number, setNumber] = useState(true);
+  const [count, setCount] = useState(0);
+  const [upper, setUpper] = useState(false);
+  const [lower, setLower] = useState(false);
+  const [number, setNumber] = useState(false);
   const [symbol, setSymbol] = useState(false);
   const [copied, setCopied] = useState(false);
   
@@ -120,7 +120,7 @@ function App() {
     <main>
      <div className="form-container">
        <h1>Password Generator</h1>
-       <form id="passForm" action="">
+       <form id="passForm" action="#">
         <input id="password" type="text" ref={pass} value={password} placeholder='P4$5W0rD!'/>
 
         <label className={copied? "show" : "hide"}>COPIED</label>
@@ -131,7 +131,7 @@ function App() {
             <div className='length-container'>
               <p>Character Length</p>
               <p className='char-length'>{count}</p>
-              <input type="range" min="1" max="20" value={count} onInput={()=>handleChangeValue()} style={{"--range": count}} ref={range}name="" id="" />
+              <input type="range" min="0" max="20" value={count} onInput={()=>handleChangeValue()} style={{"--range": count}} ref={range}name="" id="" />
            
             </div>
        

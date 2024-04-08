@@ -41,6 +41,7 @@ main{
     align-items: center;
     padding: 1rem;  
     row-gap: 1rem;
+    width: 100%;
 
     @media screen and (min-width: 375px) {
         height: 100dvh;
@@ -54,6 +55,10 @@ main{
 h1{
     color: $rocketmetallic;
     font-size: 16px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 24px;
+    }
 }
 
 #passForm{
@@ -61,6 +66,7 @@ h1{
     padding: 16px 16px;
     background-color: $blackrussian;
     position:relative;
+    width: 100%;
     
     @media screen and (min-width: 375px) {
         padding: 16px 32px;
@@ -101,6 +107,7 @@ h1{
         display: flex;
         align-items: center;
         justify-content: end;
+        margin-left:auto;
         cursor: pointer;
 
         img{
@@ -113,10 +120,11 @@ h1{
 #password{
     background-color: $blackrussian;
     border:none;
-
+    box-sizing: border-box;
+    width: 100%;
     color: $white;
     font-family: inherit;
-    
+    overflow: hidden;
     font-size: 24px;
 }
 
@@ -125,10 +133,14 @@ h1{
     background-color: $blackrussian;
     padding:2rem;
     color: $white;
-    width: 100%;
+    width: auto;
     display: grid;
     row-gap: 1rem;
 
+    @media screen and (min-width: 768px) {
+        max-width: 540px;
+        width: 100%;
+    }
     .length-container{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -161,11 +173,11 @@ h1{
 
         input[type="range"]::-webkit-slider-runnable-track {
             
-            background: linear-gradient(to right, $green calc(var(--range) / 20 * 100%), $blackrussian calc(var(--range) / 20 * 100%));
+            background: linear-gradient(to right, $green calc(var(--range) / 20 * 100%), #18171F calc(var(--range) / 20 * 100%));
             height: 0.5rem;
         }
         input[type="range"]::-moz-range-track {
-            background: linear-gradient(to right, $green calc(var(--range) / 20 * 100%), $blackrussian calc(var(--range) / 20 * 100%));
+            background: linear-gradient(to right, $green calc(var(--range) / 20 * 100%), #18171F calc(var(--range) / 20 * 100%));
             height: 0.5rem;
         }
 

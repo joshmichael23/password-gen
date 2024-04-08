@@ -24,15 +24,15 @@ Users should be able to:
 - See hover and focus states for all interactive elements on the page
 
 ### Screenshot
-![](./phone.png)
-![](./tablet.png)
-![](./desk.png)
+![](./public/phone.png)
+![](./public/tablet.png)
+![](./public/desk.png)
 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor](https://github.com/joshmichael23/password-gen)
+- Live Site URL: [Vercel](https://password-gen-rust.vercel.app)
 
 ## My process
 
